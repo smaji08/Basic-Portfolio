@@ -3,12 +3,6 @@
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.container{
-    max-width: 960px;
-    background: white;
-    border: 1px solid #dddddd;
-}
-
 h1,h2{
     font-family:'Georgia', Times, Times New Roman, serif;
     color:teal;
@@ -27,18 +21,26 @@ h1{
     text-align: center;
 }
 
+hr{
+    border:1px solid lightgray;
+}
 
 body{
     background: url("../images/interlaced.png");
-    
+    color: #777777;
 }
 
+
 header{
-    /* position: relative; */
+    position: sticky;
+    width: 100%;
+    left:0;
+    top:0;
     background: white;
     height:75px;
-    border-bottom: 2px solid lightgray;
+    border: 2px solid #cccccc;
     box-shadow: 5px 1px 6px #888888;
+    z-index: 1;
 }
 
 nav ul{
@@ -53,11 +55,21 @@ nav ul li{
     margin:10px;
 }
 
+nav ul li:hover{
+    opacity: 0.5;    
+}
+
 a{
     text-decoration: none;
-    color: grey;
     font-size: 18px;
     padding: 4px;
+}
+
+.container{
+    max-width: 960px;
+    background: white;
+    border: 1px solid #dddddd;
+    z-index: 0;
 }
 
 .main-container{
@@ -119,7 +131,6 @@ table{
 .text-block-row2{
   top:415px;
 }
-
 .text-block-row3{
   bottom:30px;
 }
@@ -137,26 +148,30 @@ input[type=text], [type=email], textarea{
     width: 100%;
 }
 
-label{
-    color: gray;
-}
-
 input[type=submit]{
-    background: rgb(2, 149, 149);
+    background:#4aaaa5;
     color: white;
     border:none;
     padding: 5px 15px;
 }
 
+input[type=submit]:hover{
+    background: teal;
+    cursor: pointer;
+}
+
 
 /* Footer style */
 footer{
-    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background:#666666;
     text-align: center;
     font-size:x-small;
     color:white;
-    border-top: 5px solid teal;
-    height:60px;
-    padding-top:40px;
+    border-top: 8px solid #4aaaa5;
+    height:40px;
+    padding-top:20px;
 }
