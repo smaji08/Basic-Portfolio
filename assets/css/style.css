@@ -25,16 +25,15 @@ hr{
 }
 
 body, a:visited{
-    background: url("../images/interlaced.png");
+    background: url("../images/blue-snow.png");
     color: #777777;
 }
 
 #header-bar{
     position: sticky;
-    left:0;
     top:0;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
     background: white;
     border: 2px solid #cccccc;
     box-shadow: 5px 1px 6px #888888;
@@ -68,16 +67,16 @@ a{
     padding: 4px;
 }
 
+.active{
+    text-decoration: underline;
+}
 .container{
     max-width: 960px;
     background: white;
     border: 1px solid #dddddd;
-    z-index: 0;
 }
 
 .main-container{
-    clear: both;
-    margin: auto;
     margin:20px auto 80px;
     padding: 15px;
     line-height: 2;
@@ -85,7 +84,7 @@ a{
 
 img{
     width: 225px;
-    height: 165px;
+    height: 175px;
 }
 
 #selfpic{
@@ -95,53 +94,41 @@ img{
     margin:10px;
 }
 
-#aboutme{
+.aboutme{
     font-size: 18px;
 }
 
-
 /* portfolio style */
-
 .portfolio-container{
     position: relative;
-    margin: auto;
     font-family:'Georgia', Times, Times New Roman, serif;
     margin:20px auto 40px;
     padding:20px;
 }
 
-td{
-    border: 25px solid transparent;
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 55%;
+}
+  
+.flexbox-container > div {
+    position: relative;
+    margin: 20px 25px 15px 0px;
 }
 
-table{
-    border-collapse: collapse;
-    border-style: hidden;
-    margin-top:20px;
-}
-
-.text-block-row1, .text-block-row2, .text-block-row3{
+.portfolio-image-text{
     position: absolute;
-    background:#4aaaa5;
+    top:120px;
     color: white;
+    background:#4aaaa5;
     text-align: center;
-    width:225px;
-    height: 50px;
-}
-
-.text-block-row1{
-    top:220px;
-}
-
-.text-block-row2{
-    top:415px;
-}
-.text-block-row3{
-    bottom:30px;
+    width:100%;
+    height: 27%;
+    font-size: 18px;
 }
 
 /* Contact form styles */
-
 .contact-container{
     padding: 25px;
     margin: 50px auto 85px;
@@ -164,7 +151,6 @@ input[type=submit]:hover{
     background: teal;
     cursor: pointer;
 }
-
 
 /* Footer style */
 footer{
