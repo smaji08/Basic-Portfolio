@@ -68,6 +68,10 @@ a{
     padding: 4px;
 }
 
+.active{
+    text-decoration: underline;
+}
+
 .container{
     max-width: 960px;
     background: white;
@@ -95,13 +99,12 @@ img{
     margin:10px;
 }
 
-#aboutme{
+.aboutme{
     font-size: 18px;
 }
 
 
 /* portfolio style */
-
 .portfolio-container{
     position: relative;
     margin: auto;
@@ -141,7 +144,6 @@ table{
 }
 
 /* Contact form styles */
-
 .contact-container{
     padding: 25px;
     margin: 50px auto 85px;
